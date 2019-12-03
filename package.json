@@ -1,0 +1,37 @@
+{
+    "name": "ansible-doc-renderer",
+    "version": "1.0.0-alpha",
+    "description": "",
+    "main": "dist/main.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx webpack",
+        "prepublish": "npx webpack",
+        "prepare": "npx webpack"
+    },
+    "author": "David Newswanger",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@types/react": "^16.9.11",
+        "@types/react-dom": "^16.9.4",
+        "source-map-loader": "^0.2.4",
+        "style-loader": "^1.0.0",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.7.2",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10"
+    },
+    "dependencies": {
+        "@patternfly/react-core": "^3.120.8",
+        "css-loader": "^3.2.0",
+        "file-loader": "^4.3.0",
+        "image-webpack-loader": "^6.0.0",
+        "lodash": "^4.17.15",
+        "node-sass": "^4.13.0",
+        "react": "^16.11.0",
+        "react-dom": "^16.11.0",
+        "react-router-dom": "^5.1.2",
+        "sass-loader": "^8.0.0"
+    }
+}
