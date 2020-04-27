@@ -1,9 +1,7 @@
 import * as React from 'react';
 import './render-plugin-doc.scss';
 
-import { Alert } from '@patternfly/react-core';
-
-import { PluginContentType, ContentSummaryType } from '../../../src';
+import { PluginContentType } from '../../../src';
 
 class PluginOption {
     name: string;
@@ -47,12 +45,14 @@ interface IState {
 
 interface IProps {
     plugin: PluginContentType;
-    // collectionName: string;
-    // namespaceName: string;
 
     renderModuleLink: (moduleName: string) => React.ReactElement;
     renderDocLink: (name: string, href: string) => React.ReactElement;
-    renderTableOfContentsLink: (title, section) => React.ReactElement;
+    renderTableOfContentsLink: (
+        title: string,
+        section: string,
+    ) => React.ReactElement;
+    renderWarning: (text: string) => React.ReactElement;
 }
 
 export class RenderPluginDoc extends React.Component<IProps, IState> {
@@ -113,7 +113,7 @@ export class RenderPluginDoc extends React.Component<IProps, IState> {
             }
 
             return (
-                <div className="pf-c-content">
+                <div>
                     <h1>
                         {plugin.content_type} > {plugin.content_name}
                     </h1>
@@ -140,13 +140,11 @@ export class RenderPluginDoc extends React.Component<IProps, IState> {
         // error instead of crashing the whole app
         return (
             <React.Fragment>
-                <Alert
-                    isInline
-                    variant="warning"
-                    title="Documentation Syntax Error: cannot parse plugin documention."
-                />
+                {this.props.renderWarning(
+                    'Documentation Syntax Error: cannot parse plugin documention.',
+                )}
                 <br />
-                <div className="pf-c-content">
+                <div>
                     {plugin.content_type && plugin.content_name ? (
                         <h1>
                             {plugin.content_type} > {plugin.content_name}

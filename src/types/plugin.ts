@@ -11,12 +11,6 @@ export class PluginContentType {
     };
 }
 
-export class ContentSummaryType {
-    name: string;
-    content_type: string;
-    description: string;
-}
-
 class RoleContentType {
     content_type: string;
     content_name: string;
