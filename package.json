@@ -1,5 +1,5 @@
 {
-    "name": "ansible-doc-renderer",
+    "name": "galaxy-doc-builder",
     "version": "1.0.0-alpha",
     "description": "",
     "main": "dist/main.js",
