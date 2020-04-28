@@ -317,7 +317,7 @@ export class RenderPluginDoc extends React.Component<IProps, IState> {
                 switch (type) {
                     case 'L':
                         const url = textMatch.split(',');
-                        return renderDocLink(url[1], url[0]);
+                        return renderDocLink(url[0], url[1]);
                     case 'U':
                         return (
                             <a href={textMatch} target="_blank">
