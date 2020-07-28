@@ -21,7 +21,7 @@ class PluginDoc {
     notes?: string[];
     deprecated?: {
         removed_in?: string;
-        alternate?: string;
+        alternative?: string;
         why?: string;
     };
 }
@@ -380,8 +380,8 @@ export class RenderPluginDoc extends React.Component<IProps, IState> {
 
                 <div>
                     <b>Alternative: </b>
-                    {deprecated.why
-                        ? doc.deprecated.why
+                    {deprecated.alternative
+                        ? doc.deprecated.alternative
                         : 'No alternatives specified.'}
                 </div>
             </React.Fragment>
