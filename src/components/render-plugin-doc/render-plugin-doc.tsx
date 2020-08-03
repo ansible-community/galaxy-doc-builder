@@ -115,7 +115,7 @@ export class RenderPluginDoc extends React.Component<IProps, IState> {
             return (
                 <div>
                     <h1>
-                        {plugin.content_type} > {plugin.content_name}
+                        {plugin.content_type} &gt; {plugin.content_name}
                     </h1>
                     <br />
                     {content.shortDescription}
@@ -147,7 +147,7 @@ export class RenderPluginDoc extends React.Component<IProps, IState> {
                 <div>
                     {plugin.content_type && plugin.content_name ? (
                         <h1>
-                            {plugin.content_type} > {plugin.content_name}
+                            {plugin.content_type} &gt; {plugin.content_name}
                         </h1>
                     ) : null}
                     <p>
