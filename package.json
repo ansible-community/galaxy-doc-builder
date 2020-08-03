@@ -1,6 +1,6 @@
 {
-    "name": "galaxy-doc-builder",
-    "version": "1.0.0-alpha3",
+    "name": "@ansible/galaxy-doc-builder",
+    "version": "1.0.0-alpha4",
     "description": "",
     "main": "dist/main.js",
     "types": "dist/index.d.ts",
