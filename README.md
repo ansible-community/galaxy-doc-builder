@@ -1,5 +1,12 @@
 # Galaxy Doc Builder
 
+**:warning: Note**
+
+This repository has been archived, code moved to [ansible-hub-ui](https://github.com/ansible/ansible-hub-ui) in https://github.com/ansible/ansible-hub-ui/pull/2850.
+
+---
+
+
 This package provides a series of react components that can be used render ansible
 plugin documentation. These components rely on the output from the [galaxy importer](https://github.com/ansible/ansible-hub-ui)
 
